@@ -1,0 +1,99 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h1,
+.font-5x {
+  font-size: 48px;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+
+  @media (min-width: 32rem) {
+    font-size: 56px;
+    letter-spacing: -1px;
+  }
+
+  @media (min-width: 48rem) {
+    font-size: 64px;
+    letter-spacing: -1.5px;
+  }
+}
+
+h2,
+.font-4x {
+  font-size: 36px;
+  line-height: 1.3;
+
+  @media (min-width: 32rem) {
+    font-size: 40px;
+    letter-spacing: -0.5px;
+  }
+
+  @media (min-width: 48rem) {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+}
+
+h3,
+.font-3x {
+  font-size: 26px;
+
+  @media (min-width: 32rem) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 48rem) {
+    font-size: 36px;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+  }
+}
+
+h4,
+.font-2x {
+  font-size: 24px;
+}
+
+h5,
+.font-large {
+  font-size: 20px;
+}
+
+h6,
+.font-medium {
+  font-size: 18px;
+}
+
+p,
+.font-base {
+  font-size: 16px;
+}
+
+small,
+.font-small {
+  font-size: 14px;
+}
+
+small.font-tiny,
+.font-tiny {
+  font-size: 12px;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}

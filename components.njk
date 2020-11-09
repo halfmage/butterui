@@ -1,0 +1,12 @@
+---
+title: Homepage
+layout: default
+---
+
+<h1> All Components </h1>
+
+<ul>
+  {%- for item in collections.component -%}
+    <li><a href="{{item.url}}">{{ item.data.title }}</a></li>
+  {%- endfor -%}
+</ul>

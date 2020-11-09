@@ -1,0 +1,30 @@
+.button {
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-radius: 0.25rem;
+  border: 0;
+  font-weight: bold;
+  line-height: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  min-width: 100px;
+
+  &.primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  &.secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+  }
+
+  &.tertiary {
+    background-color: var(--color-tertiary);
+    color: var(--color-white);
+  }
+}

@@ -1,0 +1,39 @@
+.container {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 32rem) {
+    max-width: 30rem;
+  }
+
+  @media (min-width: 48rem) {
+    max-width: 46rem;
+  }
+
+  @media (min-width: 64rem) {
+    max-width: 62rem;
+  }
+
+  @media (min-width: 80rem) {
+    max-width: 78rem;
+  }
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  &.space-children {
+    > * + * {
+      margin-left: 1.5rem;
+    }
+  }
+  &.vertical-center {
+    align-items: center;
+  }
+  &.horizontal-stretch {
+    justify-content: space-between;
+  }
+}

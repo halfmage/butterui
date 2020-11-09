@@ -1,0 +1,14 @@
+---
+title: Hero components
+slug: hero
+layout: default
+tags: page
+---
+
+<h1>{{ title }}</h1>
+
+<ul>
+  {%- for item in collections.hero -%}
+    <li><a href="{{item.url}}">{{ item.data.title }}</a></li>
+  {%- endfor -%}
+</ul>

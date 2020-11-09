@@ -1,0 +1,39 @@
+---
+title: Navigation simple
+layout: workbench
+tags: [navigation]
+---
+
+<div class="navigation" x-data="{ menuOpen: false }">
+  <div class="container">
+    <img src="/images/logo.png" class="logo" />
+    <svg
+      class="menu-trigger"
+      @click="menuOpen = !menuOpen"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="#444"
+        fill-rule="evenodd"
+        d="M3 8V6h18v2H3zm0 5h18v-2H3v2zm0 5h18v-2H3v2z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    <div
+      class="menu"
+      x-show.transition="menuOpen"
+      @click.away="menuOpen = false"
+    >
+      <a class="menu-item" href="#">Home</a>
+      <a class="menu-item" href="#">Features</a>
+      <a class="menu-item" href="#">Blog</a>
+      <a class="menu-item" href="#">Shop</a>
+      <div class="menu-right">
+        <a href="#" class="button">Sign in</a>
+        <a href="#" class="button tertiary">Sign up</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+---
+title: Navigation components
+slug: navigation
+layout: default
+tags: page
+---
+
+<h1>{{ title }}!</h1>
+
+<ul>
+  {%- for item in collections.navigation -%}
+    <li><a href="{{item.url}}">{{ item.data.title }}</a></li>
+  {%- endfor -%}
+</ul>

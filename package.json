@@ -1,0 +1,23 @@
+{
+  "name": "butterui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --style=compressed scss/butterui.scss _includes/butterui.css",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "npm run sass -- --watch",
+    "start": "npm-run-all sass --parallel watch:*",
+    "build": "npm run sass && eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "alpinejs": "^2.7.3",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.29.0"
+  }
+}
